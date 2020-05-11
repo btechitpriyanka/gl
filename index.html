@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>Trello Board</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	</head>
+	<body>
+    
+		    <div class="menu_bar">
+				 <div class="menu"> <i class="fas fa-home"></i></div>
+				 <div class="menu"> <i class="fas fa-th-list"></i> Boards</div> 
+				 <div class="menu_input"> <input  class="input" type="text" /></div>
+				 <div class="title"> Tralala</div>
+				 <div class="menu right"> <i class="fas fa-plus"></i></div>
+				 <div class="menu right"> <i class="fas fa-user"></i></div>
+		    </div>
+		   <div class="menu_bar2">
+			   <div class="menu2"> Frontend Training</div>
+			   <div class="menu2 right dot"> <i class="fas fa-ellipsis-v"></i>&nbsp;Show menu  </div>	  
+		   </div>
+	<div class="main_container"> 
+	<div class="flex_div">
+		<div class="flex_heading">
+			<span> To do  </span><span class="right dot"> ...  </span>
+		</div>
+		<div class="flex_body">
+			<div class="span_btn" onmouseover="show_icon('btn_1',1)" onmouseout="show_icon('btn_1',0)">Learn HTML <span class="right"> <i class="fas fa-pencil-alt pencil" id="btn_1"></i>  </span>  
+			</div>
+			<div class="span_btn" onmouseover="show_icon('btn_2',1)" onmouseout="show_icon('btn_2',0)">Learn CSS <span class="right"> <i class="fas fa-pencil-alt pencil" id="btn_2"></i>  </span>  
+			</div>
+			<div class="span_btn" onmouseover="show_icon('btn_3',1)" onmouseout="show_icon('btn_3',0)">Learn CSS <span class="right"> <i class="fas fa-pencil-alt pencil" id="btn_3"></i>  </span>  
+			</div>
+			<div><i class="fas fa-plus"></i> Add Another List </div>
+		</div>
+		
+	</div>
+	<div class="flex_div">
+		<div class="flex_heading">
+			<span> Doing  </span><span class="right dot"> ...  </span>
+		</div>
+		<div class="flex_body">
+		<form>
+			<div class="span_btn">Prepare Resume </span>  
+			</div>
+			<div><textarea rows="3" placeholder="Enter a title for this card..." class="textarea"></textarea>
+			</div>
+			<div>
+				<button class="button">Add Card</button>
+				<i class="fas fa-2x fa-times times"></i>
+			</div>
+		</form>
+		</div>
+	</div>
+	<div class="flex_div">
+		<div class="flex_heading">
+			<span> Testing/Verifying  </span><span class="right dot"> ...  </span>
+		</div>
+		<div class="flex_body">
+			<div class="span_btn">Twitter app frontend </span>  
+			</div>	
+			<div><i class="fas fa-plus"></i> Add another card </div>			
+		</div>
+	</div>
+	
+	<div class="flex_div">
+		<div class="flex_heading">
+			<span> Deploying  </span><span class="right dot"> ...  </span>
+		</div>
+		<div class="flex_body">
+			<div class="span_btn">Twitter app backend </span>  
+			</div>	
+			<div><i class="fas fa-plus"></i> Add another card </div>			
+		</div>
+	</div>
+	<div class="flex_div">
+		<div class="flex_heading">
+			<span> Done  </span><span class="right dot"> ...  </span>
+		</div>
+			<div class="flex_body">
+			 <div><i class="fas fa-plus"></i> Add another card </div>			
+		</div>
+	</div>
+	<div class="flex_div round_border">
+		<div>
+			<span><i class="fas fa-plus"></i> Add Another List </span>
+		</div>
+	</div>
+	<div class="flex_div round_border">
+		<div class="flex_body">
+		  <form>
+			<div><textarea rows="3" placeholder="Enter a title for this card..." class="textarea"></textarea>
+			</div>
+				<button class="button">Add Card</button>
+				<i class="fas fa-2x fa-times times"></i>
+			</div>
+		 </form>			
+		</div>
+	</div>
+
+	<script>
+	function show_icon(element_id,opacity) {   
+	  document.getElementById(element_id).style.opacity = opacity;
+	
+	};
+	</script>
+		</body>
+</html>
